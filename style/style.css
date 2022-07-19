@@ -24,9 +24,6 @@ a {
     max-width: 100%;
 }
 
-
-
-
 /* header */
 
 
@@ -96,8 +93,6 @@ ul {
     width: 20px;
 }
 
-
-
 .influencer {
     padding-top: 50px;
 }
@@ -136,7 +131,6 @@ h1.title {
 
 /* logos */
 
-
 .logos {
     padding: 50px 0;
 }
@@ -158,10 +152,7 @@ h1.title {
     justify-content: space-around;
 }
 
-
-
 /* popular products*/
-
 
 .popular {
     padding: 50px 0;
@@ -424,6 +415,138 @@ a i {
 
     .items {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured {
+        padding-top: 0;
+    }
+
+    .featured .container {
+        padding: 0 15px;
+    }
+
+    .featured .flex.j-between.a-center {
+        flex-direction: column-reverse;
+    }
+
+    .featured-details h2 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+
+    .featured-details {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding-top: 20px;
+        position: relative;
+    }
+
+    header .flex {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        text-align: center;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .btn.menu-btn {
+        display: block;
+        line-height: 1;
+        position: relative;
+        top: -2px;
+    }
+
+    .menu ul li {
+        display: none;
+    }
+
+    .menu li {
+        margin-right: 0;
+    }
+
+    .menu ul li:last-child {
+        display: block;
+    }
+
+    .column {
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .half {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .influencer {
+        padding-top: 0;
+    }
+
+    h1.title {
+        font-size: 28px;
+        margin-top: 14px;
+    }
+
+    .half.flex.f-end img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .logos {
+        padding: 0;
+    }
+
+    .logos .container {
+        padding: 0 15px;
+    }
+
+    .logos .flex.j-around.a-center {
+        flex-wrap: wrap;
+    }
+
+    .logos img {
+        height: 16px;
+        margin: 12px;
+    }
+
+    .logos .line {
+        display: none;
+    }
+
+    .popular {
+        padding-top: 0;
+    }
+
+    .popular .container {
+        padding: 0 15px;
+    }
+
+    .items {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .featured {
