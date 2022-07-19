@@ -136,16 +136,17 @@ h1.title {
 }
 
 .logos .container {
-    padding: 0 165px;
+    padding: 0 180px;
 }
 
 .logos .line {
     height: 1px;
-    background: linear-gradient(rgba(192, 204, 218, 0.1), rgb(192, 204, 218, 0.6), rgb(192, 204, 218, 0.6), rgb(192, 204, 218, 0.6), rgb(192, 204, 218, 0.1))
+    background: linear-gradient(rgba(197, 214, 233, 0.1), rgba(200, 218, 240, 0.6), rgb(192, 204, 218, 0.6), rgba(192, 208, 227, 0.1));
 }
 
+
 .logos .flex {
-    padding: 40px 0;
+    padding: 50px 0;
 }
 
 .j-around {
@@ -159,7 +160,7 @@ h1.title {
 }
 
 .popular .container {
-    padding: 0 196px;
+    padding: 0 200px;
 }
 
 .center {
@@ -167,7 +168,7 @@ h1.title {
 }
 
 .popular .title {
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 600;
     text-align: center;
 }
@@ -179,9 +180,14 @@ h1.title {
     grid-gap: 30px;
 }
 
+.item:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
 .item {
     box-shadow: 0px 0px 12px -3px rgba(0, 0, 0, 0.1);
-    padding: 14px;
+    padding: 15px;
     border-radius: 5px;
 }
 
@@ -191,7 +197,7 @@ h1.title {
 
 .item-title {
     margin-top: 10px;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 500;
 }
 
