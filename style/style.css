@@ -3,18 +3,19 @@
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    color: #3A3A3A;
+    color: #000000;
     margin: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(90deg, lightblue, purple);
 }
 
 a {
     text-decoration: none;
-    color: #3A3A3A;
+    color: #0a0505;
 }
 
 .container {
@@ -37,7 +38,7 @@ header {
 
 .btn.menu-btn {
     background-color: transparent;
-    color: #3A3A3A !important;
+    color: #3A3A3A;
     padding: 0;
     font-size: 20px;
     margin: 0;
@@ -105,28 +106,77 @@ h1.title {
     font-size: 52px;
     font-weight: 700;
     line-height: 1.2;
+    animation: 1.8s linear alternate slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 120%;
+        width: 100%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 .subtitle {
     margin: 16px 0;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .btn {
-    background: #b8295e;
+    position: relative;
+    background: transparent;
     color: white;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #de2468;
+    border: 2px solid #de2468;
     padding: 10px 24px;
     margin-top: 16px;
     display: inline-block;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #de2468;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.btn:hover::before {
+    transform: translate(-100%);
+}
+
+.btn:hover::after {
+    transform: translate(100%);
 }
 
 .btn i {
-    color: white;
+    color: black;
 }
 
 .f-end {
     justify-content: flex-end;
+}
+
+.half img {
+    animation: up-down 2.5s linear infinite;
+}
+
+@keyframes up-down {
+
+    0%,
+    100% {
+        transform: translateX(5rem);
+    }
+
+    50% {
+        transform: translateX(-5rem);
+    }
 }
 
 /* logos */
@@ -144,6 +194,14 @@ h1.title {
     background: linear-gradient(rgba(197, 214, 233, 0.1), rgba(200, 218, 240, 0.6), rgb(192, 204, 218, 0.6), rgba(192, 208, 227, 0.1));
 }
 
+.eclogo {
+    transition: transform 1s;
+    margin: 0 auto;
+}
+
+.eclogo:hover {
+    transform: scale(1.1);
+}
 
 .logos .flex {
     padding: 50px 0;
@@ -220,9 +278,9 @@ h1.title {
 
 .item-about {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 6px;
-    color: #5E6366;
+    color: #0a0505;
 }
 
 .more {
@@ -232,8 +290,21 @@ h1.title {
 
 .more a {
     color: #d5135a;
-    font-weight: 700;
+    font-weight: 600;
     font-size: larger;
+}
+
+.more a:hover {
+    color: #c4567e;
+    transition: 0.2s;
+}
+
+.more a:hover::after {
+    transform: translate(100%);
+}
+
+.more a:hover::before {
+    transform: translate(-100%);
 }
 
 .more a i {
@@ -264,11 +335,20 @@ a i {
 }
 
 .featured-details p {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .featured .btn {
     border-radius: 0;
+}
+
+.featured-image {
+    transition: transform 1s;
+    margin: 0 auto;
+}
+
+.featured-image:hover {
+    transform: scale(1.2);
 }
 
 /* footer */
