@@ -256,18 +256,18 @@ h1.title {
 
 .item-title {
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .item-price {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 400;
 }
 
 .fa-star,
 .fa-star-half-alt {
-    font-size: 12px;
+    font-size: 10px;
     color: #FB8200;
 }
 
@@ -486,7 +486,7 @@ a i {
 
     .logos img {
         height: 16px;
-        margin: 12px;
+        margin: 10px;
     }
 
     .logos .line {
@@ -502,7 +502,9 @@ a i {
     }
 
     .items {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1px;
     }
 
     .featured {
@@ -510,7 +512,7 @@ a i {
     }
 
     .featured .container {
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
     .featured .flex.j-between.a-center {
